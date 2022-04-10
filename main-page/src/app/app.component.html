@@ -1,0 +1,10 @@
+<app-main-page
+  (sendMessage)="sendMessage($event)"
+  [messages]="messages">
+</app-main-page>
+<iframe
+  [src]="iframeURL"
+  width="800" height="600"
+  #iframeTagName
+  (load)="loadIframe(iframeTagName)">
+</iframe>

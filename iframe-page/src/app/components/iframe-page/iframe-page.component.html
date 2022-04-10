@@ -1,0 +1,11 @@
+<label for="name">Message: </label>
+<input
+  [formControl]="messageForSend"
+  id="name"
+  placeholder="Type something"
+  type="text"
+  />
+<button (click)="onSend()">Send to main page</button>
+<ul *ngFor="let message of messages">
+  <li>{{message}}</li>
+</ul>
